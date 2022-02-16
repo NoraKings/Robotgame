@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pot {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+  bottom: 15%;
+  position: absolute;
+  -webkit-animation: linear;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% { 
+    left: calc(100% - 100px); 
+   }
+  100% {
+    left: 100;     
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="pot"></div>
+</body>
+</html>

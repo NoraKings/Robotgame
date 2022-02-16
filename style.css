@@ -1,0 +1,116 @@
+#robot-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+#robo-head {
+    background-color:greenyellow;        
+    width: 100px;
+    height: 30px;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    margin-left: 132px;
+}
+
+
+.robo-eyes {
+height: 8px;
+width: 8px;
+background-color: white;
+border-radius: 50%;
+
+}
+
+#robo-body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.body {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin-top: 7px;
+    border-radius: 0 0 20px 20px;
+}
+
+.hands {
+    background-color: greenyellow;
+    height: 60px;
+    width: 23px;
+    border-radius: 10px;
+}
+
+.hand-1{
+    margin: 7px 8px 0 100px;
+}
+
+.hand-2 {
+    margin: 7px 0 0 8px;
+}
+
+#robo-legs {
+display: flex;
+flex-direction: row;
+margin-left: 153px;
+}
+
+.legs {
+    background-color: greenyellow;
+    height: 70px;
+    width: 23px;
+    margin-top: -20px;
+    border-radius: 0 0 10px 10px;
+}
+.leg-2 {
+    margin-left: 10px;
+}
+
+#antennas {
+    display: flex;
+    flex-direction: row;
+    margin-left: 165px;
+    margin-bottom: -5px;
+}
+
+.ant {height: 30px;
+    width: 5px;
+    background-color: greenyellow; 
+    border-radius: 3px;   
+}
+
+.antenna1 {
+    transform: rotate(-30deg);
+}
+
+.antenna2 {
+    transform: rotate(30deg);
+    margin-left: 30px;
+}
+
+#ball {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 80%;
+    left: 32%;
+    }
+#robot-1:hover .leg-2 {
+    transform: rotate(-20deg);
+}
+#robot-1:hover ~ #ball {
+    left: 73%;
+}
+
+#robot-1:hover ~ #robot-2 .leg-1 {
+    transform: rotate(20deg);
+}
+
+
